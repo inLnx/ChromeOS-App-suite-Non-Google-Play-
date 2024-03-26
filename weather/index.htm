@@ -38,8 +38,8 @@
 
         // Function to fetch weather data
         async function getWeather() {
-            const city = document.getElementById("cityInput").value;
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=829a154daa057a4a13fb278b8b92b70c
+            const city = document.getElementById("{$city}").value;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=829a154daa057a4a13fb278b8b92b70c
 &units=metric`;
 
             try {
