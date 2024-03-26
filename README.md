@@ -1,3 +1,6 @@
 # ChromeOS app suite
 ### Running
-Download the zip file and go through the folder of the app you want. Next open the install.htm and complete the install. Come back to the file to open it again
+* Download the Zip file
+* Open the folder of the app you want
+* Open it's install.htm file and let it install
+* After it notifies you that it is finished open the index.htm file
