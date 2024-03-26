@@ -3,7 +3,7 @@
 
 <head>
   
-  <script>@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+  <style>@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 /* --------------------- Created By InCoder --------------------- */
 * {
   margin: 0;
@@ -113,7 +113,7 @@ body {
 .windDetails .windSpeed img {
   max-height: 3rem;
   margin-right: 0.5rem;
-}</script>  <!-- --------------------- Created By InCoder --------------------- -->
+}</style>  <!-- --------------------- Created By InCoder --------------------- -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -161,9 +161,9 @@ API = "8cf5ac5621c8d0266298a149e49d7514";
 const setWeatherDetails = (data) => {
     // console.log(data);
     desc.innerHTML = data.weather[0].description;
-    weather.innerHTML = Math.round(data.main.temp - 273.15) + "°c";
+    weather.innerHTML = Math.round(data.main.temp - 273.15) + "°f";
     humidity.innerHTML = data.main.humidity + "%";
-    windSpeed.innerHTML = data.wind.speed + "km/h";
+    windSpeed.innerHTML = data.wind.speed + "mi/h";
     switch (data.weather[0].main) {
         case 'Clouds':
             weatherIcon.src = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwFTkt5z_dxU6w1UnS1PxiZV3HDiPGsAW5Lrsp09MnlCmkQre9GzO8MnGytaaY1eZoqBN6SMJ4U578_uDtiuXswovr1T3o-Kt5KK0mlN_zC0RDodJFaKHQ3Uk-HIZ3vuMvAKNJi8DDFwWA7F6BOxz78Oh-UePwJTuc3PG0ZIZypPE1xlMPl5z46joaEw/s320/Clouds.png";
