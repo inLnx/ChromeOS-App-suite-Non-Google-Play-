@@ -161,7 +161,7 @@ API = "8cf5ac5621c8d0266298a149e49d7514";
 const setWeatherDetails = (data) => {
     // console.log(data);
     desc.innerHTML = data.weather[0].description;
-weather.innerHTML = Math.round((data.main.temp - 273.15) * 9/5 + 32) + "°F";
+weather.innerHTML = Math.round((data.main.temp * 9/5 + 32) + "°F";
     humidity.innerHTML = data.main.humidity + "%";
     windSpeed.innerHTML = data.wind.speed + "mi/h";
     switch (data.weather[0].main) {
