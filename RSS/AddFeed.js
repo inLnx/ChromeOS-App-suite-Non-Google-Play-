@@ -8,7 +8,7 @@ function handleConfirm() {
 
 function handleGotoFeed() {
     if (userFeedURLs.length == 0) {
-        alert("You haven't entered any RSS feeds");
+        alert("No link found");
         return;
     }
     localStorage.setItem('userFeedURLs', userFeedURLs);
@@ -18,7 +18,7 @@ function handleGotoFeed() {
 function addFeedURL(url) {
     RemoveHtmlTagsFromURL(url);
     if (url == "") {
-        alert("Please enter a RSS URL!")
+        alert("enter a RSS link")
         return;
     }
     userFeedURLs.push(url);
